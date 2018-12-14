@@ -6,6 +6,8 @@ player type. The program gives prompts through using the console, and can write 
 option to write it to the console. The user can use the menu-driven system to see how many "products" have been created, how many of
 each type, and how many unique "products" were created.
 
+[Link to Class Diagram](https://github.com/MarionArmbruster/ProductionLineProject/blob/master/src/productionline/productionline%20Class%20Diagram2.pdf)
+
 # Getting Started
 To run the program, download the package "productionline" and open the .java files in an IDE of your choosing. To interact with the
 program, run the Main class contained in the package and follow the prompt instructions. Example output:  
