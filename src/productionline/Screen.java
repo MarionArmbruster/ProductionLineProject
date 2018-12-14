@@ -2,16 +2,18 @@
  * File: Screen.java
  * Author: Marion Armbruster
  * Date: 6 October 2018
- *
- * The normal class Screen implements the Interface
- * ScreenSpec, and as such uses all of its methods to
- * give specifications of a particular screen. This class
- * returns the information it is given via a toString
- * method that follows the same format as Product.
  ****************************************************/
 
 package productionline;
 
+/**
+ * The normal class Screen implements the Interface ScreenSpec, and as such uses all of its methods
+ * to give specifications of a particular screen. This class returns the information it is given via
+ * a toString method that follows the same format as Product.
+ *
+ * @Author Marion Armbruster
+ * @Author Professor Scott VanSelow for various assistance
+ */
 public class Screen implements ScreenSpec {
 
   // instance variables
@@ -28,9 +30,8 @@ public class Screen implements ScreenSpec {
    * @param resolution format of a screen should be "number x number", i.e. 720 x 480
    * @param refreshrate is the rate at which the screen refreshes in ms
    * @param responsetime is the amount of time it takes for the screen display to mirror actions
-   * done
+   *                     done
    */
-
   public Screen(String resolution, int refreshrate, int responsetime) {
     this.resolution = resolution;
     this.refreshrate = refreshrate;
@@ -42,7 +43,6 @@ public class Screen implements ScreenSpec {
    *
    * @return The resolution quality of the screen.
    */
-
   @Override
   public String getResolution() {
     return resolution;
@@ -53,7 +53,6 @@ public class Screen implements ScreenSpec {
    *
    * @return The refresh rate of the screen, usually in ms.
    */
-
   @Override
   public int getRefreshRate() {
     return refreshrate;
@@ -64,7 +63,6 @@ public class Screen implements ScreenSpec {
    *
    * @return The refresh time that the screen has.
    */
-
   @Override
   public int getResponseTime() {
     return responsetime;
@@ -76,11 +74,10 @@ public class Screen implements ScreenSpec {
    *
    * @return The String to display the resolution, refresh rate, and response time information.
    */
-
   @Override
   public String toString() {
-
-    return "\nResolution    : " + resolution + "\nRefresh Rate  : " + refreshrate
-        + "\nResponse Time : " + responsetime + "\n";
+    return String.format("%nResolution    : %s%nRefresh Rate  : %s%nResponse Time : %s",
+        resolution, refreshrate, responsetime);
   }
+
 }

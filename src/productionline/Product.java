@@ -3,6 +3,16 @@
  * Author: Marion Armbruster
  * Date: 29 September 2018
  *
+ * This program is based from specifications and
+ * instructions from an oracle exercise.
+ ****************************************************/
+
+package productionline;
+
+import java.util.Date;
+import java.util.List;
+
+/**
  * The Product class is an abstract class, and as
  * such cannot have any subclass and cannot be used
  * to create any objects of its type. It implements
@@ -11,14 +21,9 @@
  * interface in order to compare Product items and
  * to give the functionality of sorting those items.
  *
- * This program is based from specifications and
- * instructions from an oracle exercise.
- ****************************************************/
-
-package productionline;
-
-import java.util.Date;
-
+ * @Author Marion Armbruster
+ * @Author Professor Scott VanSelow for various assistance
+ */
 public abstract class Product implements Item, Comparable<Product> {
 
   // instance variables
@@ -38,7 +43,6 @@ public abstract class Product implements Item, Comparable<Product> {
    *
    * @param productName The name of the product, passed in from an argument.
    */
-
   public Product(String productName) {
 
     name = productName;
@@ -58,7 +62,6 @@ public abstract class Product implements Item, Comparable<Product> {
    *
    * @param numberId The production number of the product.
    */
-
   @Override
   public void setProductionNumber(int numberId) {
     currentProductionNumber = numberId;
@@ -72,7 +75,6 @@ public abstract class Product implements Item, Comparable<Product> {
    *
    * @param prodName The product name to be set, passed in by an argument.
    */
-
   @Override
   public void setName(String prodName) {
     name = prodName;
@@ -81,9 +83,8 @@ public abstract class Product implements Item, Comparable<Product> {
   /**
    * A getter method that returns the String "name" from the instance variable.
    *
-   * @return The name of the product
+   * @return The name of the product.
    */
-
   @Override
   public String getName() {
     return name;
@@ -95,7 +96,6 @@ public abstract class Product implements Item, Comparable<Product> {
    *
    * @return The manufactured-on date in the format of Day/Month/Date/TimeStandard/Year.
    */
-
   @Override
   public Date getManufactureDate() {
     return manufacturedOn;
@@ -110,16 +110,14 @@ public abstract class Product implements Item, Comparable<Product> {
    *
    * @return The integer serial number of the product.
    */
-
   @Override
   public int getSerialNumber() {
     return serialNumber;
   }
 
   /**
-   * A compareTo method that compares objects of Product, specially the "name" field to another
+   * A compareTo method that compares objects of Product, specially the "name" field to another.
    */
-
   @Override
   public int compareTo(Product object) {
     return name.compareTo(object.getName());
@@ -133,9 +131,27 @@ public abstract class Product implements Item, Comparable<Product> {
    * @return The String to display the information.
    */
   public String toString() {
-    return String.format("Manufacturer  : %s%nSerial Number : %s%nDate          : %s%n"
+    return String.format("%nManufacturer  : %s%nSerial Number : %s%nDate          : %s%n"
         + "Name          : %s%n", manufacturer, serialNumber, manufacturedOn, name);
   }
 
+  /**
+   * STEP 17 Optional
+   * https://www.geeksforgeeks.org/java-lang-class-class-java-set-1/
+   * Iterates through a Collection and prints all the items of a particular class-type, but only
+   * subclasses of Product. Accepts the Class to print in the parameter list.
+   *
+   * @param itemList A dynamic List that holds all of the objects to be looked at.
+   * @param classType The class type of the objects to be printed. If an object is not of this
+   *                  type, it will not be printed.
+   */
+  public static void printType(List<? extends Product> itemList, Class<?> classType){
+     //classType
+     /*for (Product item : itemList) {
+       if(item.getClass() == classType.class) {
+        System.out.println(item.toString());
+       }
+     }*/
+  } // end of printType method
 
 } // end of abstract Product class

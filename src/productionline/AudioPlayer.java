@@ -2,15 +2,18 @@
  * File: AudioPlayer.java
  * Author: Marion Armbruster
  * Date: 5 October 2018
- *
- * The AudioPlayer normal class Implements the interface
- * Multimedia Control and is a child class of Product.
- * It defines and uses the methods of Multimedia
- * Control and is a more specific type of product.
  ****************************************************/
 
 package productionline;
 
+/**
+ * The AudioPlayer normal class Implements the interface Multimedia Control and is a child class of
+ * Product. It defines and uses the methods of Multimedia Control and is a more specific type of
+ * product.
+ *
+ * @Author Marion Armbruster
+ * @Author Professor Scott VanSelow for various assistance
+ */
 public class AudioPlayer extends Product implements MultimediaControl {
 
   private String audioSpecification;
@@ -26,19 +29,17 @@ public class AudioPlayer extends Product implements MultimediaControl {
    * @param name The name of the audio device.
    * @param auSpec The type of file format the device uses
    */
-
-  public AudioPlayer(String name, String auSpec) {
+  public AudioPlayer(String name, String auSpec /*ItemType type*/) {
     // calling the parent constructor (super)
     super(name);
     audioSpecification = auSpec;
-    mediaType = ItemType.AUDIO_MOBILE;
+    mediaType = ItemType.AUDIO_MOBILE; // mediaType = ItemType(type);
   }
 
   /**
    * A method that displays the implementation of the Multimedia Control's method for what "play"
    * does specifically for the audio type.
    */
-
   @Override
   public void play() {
     System.out.println("Playing song");
@@ -48,7 +49,6 @@ public class AudioPlayer extends Product implements MultimediaControl {
    * A method that displays the implementation of the Multimedia Control's method for what "stop"
    * does specifically for the audio type.
    */
-
   @Override
   public void stop() {
     System.out.println("Stopping song");
@@ -58,7 +58,6 @@ public class AudioPlayer extends Product implements MultimediaControl {
    * A method that displays the implementation of the Multimedia Control's method for what
    * "previous" is and what it does specifically for the audio type.
    */
-
   @Override
   public void previous() {
     System.out.println("GoTo Previous song");
@@ -69,7 +68,6 @@ public class AudioPlayer extends Product implements MultimediaControl {
    * A method that displays the implementation of the Multimedia Control's method for what "next" is
    * and what it does specifically for the audio type.
    */
-
   @Override
   public void next() {
     System.out.println("GoTo Next song");
@@ -78,17 +76,15 @@ public class AudioPlayer extends Product implements MultimediaControl {
 
   /**
    * An overridden toString method calls the parent toString method to display both statements from
-   * each method. AudioPlayer's toString appends to the end of Product's toString.
+   * each class. AudioPlayer's toString is appended to the end of Product's toString.
    *
    * @return The String to display the specific Audio device file format and the device's type
-   * information.
+   *         information.
    */
-
   @Override
   public String toString() {
-    return super.toString() + "Audio Spec    : " + audioSpecification + "\nType          : "
+    return super.toString() + "Audio Spec    : " + audioSpecification + "\n Type          : "
         + mediaType + "\n";
   }
-
 
 }

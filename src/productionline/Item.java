@@ -2,20 +2,23 @@
  * File: Item.java
  * Author: Marion Armbruster
  * Date: 29 September 2018
- *
- * Item interface class is a group of related methods
- * with empty bodies that define some of the "behavior"
- * of any type of production item that may be created.
- * Behaviors include a final manufacturer string,
- * production number, product name, serial number,
- * and manufacture date.
  ****************************************************/
-
 
 package productionline;
 
 import java.util.Date;
 
+/**
+ * The Item interface class is a group of related methods
+ * with empty bodies that define some of the "behavior"
+ * of any type of production item that may be created.
+ * Behaviors include a final manufacturer string,
+ * production number, product name, serial number,
+ * and manufacture date.
+ *
+ * @Author Marion Armbruster
+ * @Author Professor Scott VanSelow for various assistance
+ */
 public interface Item {
 
   // Note: final for fields is redundant in an interface
@@ -35,7 +38,6 @@ public interface Item {
    *
    * @param prodName The full product name.
    */
-
   void setName(String prodName);
 
   /**
@@ -43,7 +45,6 @@ public interface Item {
    *
    * @return The name of the product.
    */
-
   String getName();
 
   /**
@@ -51,7 +52,6 @@ public interface Item {
    *
    * @return The date generated when the product is created.
    */
-
   Date getManufactureDate();
 
   /**
@@ -60,7 +60,6 @@ public interface Item {
    *
    * @return The integer serial number of the product.
    */
-
   int getSerialNumber();
 
 } // end of interface Item

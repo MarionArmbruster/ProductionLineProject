@@ -2,14 +2,17 @@
  * File: MultimediaControl.java
  * Author: Marion Armbruster
  * Date: 5 October 2018
- *
- * Multimedia Control interface-type class is a group
- * of related methods with empty bodies that defines
- * the behavior of any type of multimedia item.
  ****************************************************/
 
 package productionline;
 
+/**
+ * The MultimediaControl interface-type class is a group
+ * of related empty methods that defines the behavior
+ * of any type of multimedia item.
+ *
+ * @Author Marion Armbruster
+ */
 public interface MultimediaControl {
 
   // Methods that define the controls of the media
@@ -22,14 +25,12 @@ public interface MultimediaControl {
   /**
    * A method that has the functionality of the "stop" action of any audio or video player.
    */
-
   public void stop();
 
   /**
    * A method that has the functionality of going to the previous item of any audio or video
    * player.
    */
-
   public void previous();
 
   /**
@@ -37,4 +38,4 @@ public interface MultimediaControl {
    */
   public void next();
 
-}// end of class MultimediaControl
+} // end of class MultimediaControl
