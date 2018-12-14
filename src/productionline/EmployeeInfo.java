@@ -129,8 +129,7 @@ public class EmployeeInfo {
    * A method that is called from the constructor, it calls the method that gets the department
    * identification from the user and stores it in a local variable, which is then passed to a
    * validity method to ensure that the id matches the Pattern. The validation method's boolean is
-   * only used inside itself (boolean returned is not used). The set department identification
-   * method also closes the Scanner object.
+   * only used inside itself (boolean returned is not used).
    */
   private void setDeptId(Scanner in) {
     String someId = getDeptId(in);

@@ -9,15 +9,12 @@ package productionline;
 import java.util.Date;
 
 /**
- * The Item interface class is a group of related methods
- * with empty bodies that define some of the "behavior"
- * of any type of production item that may be created.
- * Behaviors include a final manufacturer string,
- * production number, product name, serial number,
- * and manufacture date.
+ * The Item interface class is a group of related methods with empty bodies that define some of the
+ * "behavior" of any type of production item that may be created. Behaviors include a final
+ * manufacturer string, production number, product name, serial number, and manufacture date.
  *
  * @Author Marion Armbruster
- * @Author Professor Scott VanSelow for various assistance
+ * @Author Professor Scott Vanselow for various assistance
  */
 public interface Item {
 

@@ -7,13 +7,11 @@
 package productionline;
 
 /**
- * The ItemType class is an enum class that creates the
- * types of items with their argument objects
- * declared. The constructor passes its parameter
- * (of the object) to the field variable.
+ * The ItemType class is an enum class that creates the types of items with their argument objects
+ * declared. The constructor passes its parameter (of the object) to the field variable.
  *
  * @Author Marion Armbruster
- * @Author Professor Scott VanSelow for various assistance
+ * @Author Professor Scott Vanselow for various assistance
  */
 public enum ItemType {
 

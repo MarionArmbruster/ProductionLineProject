@@ -7,12 +7,14 @@ package productionline;
 import java.util.ArrayList;
 
 /**
- * Not yet finished.
+ * This class, when finished, will hold a method that tests a generic print method in the Product
+ * class. This is a driver or test class.
  */
 public class PrintTest {
 
   /**
-   * Not yet finished.
+   * This method, when finished, will call a method in class Product that is a generic print method
+   * for both the object and the class it is an instance of.
    */
   public static void printMethod() {
     System.out.println("Test Print Type");

@@ -12,7 +12,7 @@ package productionline;
  * a toString method that follows the same format as Product.
  *
  * @Author Marion Armbruster
- * @Author Professor Scott VanSelow for various assistance
+ * @Author Professor Scott Vanselow for various assistance
  */
 public class Screen implements ScreenSpec {
 
@@ -51,7 +51,7 @@ public class Screen implements ScreenSpec {
   /**
    * A getter method that returns the integer from the refresh rate instance variable.
    *
-   * @return The refresh rate of the screen, usually in ms.
+   * @return The refresh rate of the screen, usually known in milliseconds.
    */
   @Override
   public int getRefreshRate() {

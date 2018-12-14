@@ -29,11 +29,11 @@ public class AudioPlayer extends Product implements MultimediaControl {
    * @param name The name of the audio device.
    * @param auSpec The type of file format the device uses
    */
-  public AudioPlayer(String name, String auSpec /*ItemType type*/) {
+  public AudioPlayer(String name, String auSpec) {
     // calling the parent constructor (super)
     super(name);
     audioSpecification = auSpec;
-    mediaType = ItemType.AUDIO_MOBILE; // mediaType = ItemType(type);
+    mediaType = ItemType.AUDIO_MOBILE;
   }
 
   /**

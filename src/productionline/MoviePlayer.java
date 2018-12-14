@@ -7,11 +7,9 @@
 package productionline;
 
 /**
- * The MoviePlayer normal class Implements the interface
- * Multimedia Control and is a child class of Product.
- * It defines and uses the methods of Multimedia
- * Control and is a different type of product from
- * AudioPlayer, as well as a more specific type of product.
+ * The MoviePlayer normal class implements the interface Multimedia Control and is a child class of
+ * Product. It defines and uses the methods of Multimedia Control and is a different type of product
+ * from AudioPlayer, as well as a more specific type of product.
  *
  * @Author Marion Armbruster
  * @Author Professor Scott VanSelow for various assistance

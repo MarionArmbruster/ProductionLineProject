@@ -7,13 +7,12 @@
 package productionline;
 
 /**
- * A testing driver for Repl.it and for step 12 and
- * step 13 in the specifications from the oracle
- * exercise. A driver class that tests the functionality
- * of the movie player as well as the audio player.
+ * A testing driver for Repl.it and for step 12 and step 13 in the specifications from the oracle
+ * exercise. A driver class that tests the functionality of the movie player as well as the audio
+ * player.
  *
  * @Author Marion Armbruster
- * @Author Professor Scott VanSelow for various assistance
+ * @Author Professor Scott Vanselow for various assistance
  */
 public class PlayerDriver {
 
@@ -46,4 +45,4 @@ public class PlayerDriver {
     movie1.stop();
   }
 
-}
+} // end of PlayerDriver class

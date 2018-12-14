@@ -7,9 +7,8 @@
 package productionline;
 
 /**
- * The MultimediaControl interface-type class is a group
- * of related empty methods that defines the behavior
- * of any type of multimedia item.
+ * The MultimediaControl interface-type class is a group of related empty methods that defines the
+ * behavior of any type of multimedia item.
  *
  * @Author Marion Armbruster
  */

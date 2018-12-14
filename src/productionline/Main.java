@@ -20,7 +20,6 @@ import java.util.Scanner;
  * Production statistics can also be displayed as the total number of items produced, the number of
  * each item, and the number of unique products created. The user decides when to quit the program.
  */
-
 public class Main {
 
   /**
@@ -38,7 +37,7 @@ public class Main {
     ArrayList<Product> products = new ArrayList<>();
 
     System.out.print("Welcome to the Oracle Production's Line! This program will allow you to"
-        + " perform the any of the following operations:\n");
+        + " perform any of the following operations:\n");
 
     // needs to be outside the scope of do-while loop in order for the while to "see" the variable
     int choice;
@@ -142,7 +141,7 @@ public class Main {
    * This method checks all input taken by the user in a specific if-else statement. It ensures that
    * nothing breaks or crashes the program.
    *
-   * @param input The System.in Scanner object passed into the method in order to be used, as
+   * @param input The System.in Scanner object passed into the method in order ot be used, as
    *              opposed to creating a new object in this method.
    * @return The validated number from user input.
    */
@@ -213,11 +212,9 @@ public class Main {
   /**
    * This method will add as many AudioPlayer-type objects to the ArrayList as the user decides to
    * do using a for loop.
-   *
    * @param input The System.in Scanner object passed into the method in order to be used, as
    *              opposed to creating a new object in this method.
-   * @param products The ArrayList of type Product that is passed so that AudioPlayers can be
-   *                 added.
+   * @param products The ArrayList of type Product that is passed so that AudioPlayers can be added.
    */
   private static void audioPlayerLoop(Scanner input, ArrayList<Product> products) {
     // ask how many times to add
@@ -253,8 +250,7 @@ public class Main {
    *
    * @param input The System.in Scanner object passed into the method in order to be used, as
    *              opposed to creating a new object in this method.
-   * @param products The ArrayList of type Product that is passed so that MoviePlayers can be
-   *                 added.
+   * @param products The ArrayList of type Product that is passed so that MoviePlayers can be added.
    */
   private static void moviePlayerLoop(Scanner input, ArrayList<Product> products) {
     // ask how many times to add
@@ -310,7 +306,7 @@ public class Main {
    *              opposed to creating a new object in this method.
    * @param products The ArrayList of type Product that is passed so that the List can be iterated
    *                 through using List methods to obtain various information about the collection.
-   * @Author Professor Vanselow for much assistance.
+   * @Author Professor Vanselow for much assistance with the HashMap.
    */
   private static void productStatistics(Scanner input, ArrayList<Product> products) {
     int stat;
@@ -382,7 +378,6 @@ public class Main {
  * All that follows from this point are old tests while the program was being built. Saved for the
  * sake of being data and to show the progress of the program.
  */
-
 /*
 /**
  * @author Professor Scott Vanselow
