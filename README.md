@@ -13,7 +13,7 @@ To run the program, download the package "productionline" and open the .java fil
 program, run the Main class contained in the package and follow the prompt instructions. Example output:  
 
 ```
-Welcome to the Oracle Production's Line! This program will allow you to perform the any of the following operations:
+Welcome to the Oracle Production's Line! This program will allow you to perform any of the following operations:
 
 Enter a menu number for selection: 
 1. Add a New Product 
