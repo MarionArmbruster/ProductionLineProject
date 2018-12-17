@@ -23,6 +23,7 @@ Enter a menu number for selection:
 9
 General exception: java.lang.Exception
 Input was not a valid integer. Please enter your selection.
+g
 
 Input Mismatch Exception: Input was not an integer. Please try again.
 2
